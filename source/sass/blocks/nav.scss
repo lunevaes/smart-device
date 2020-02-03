@@ -1,0 +1,103 @@
+.nav__list {
+  padding: 12px 0 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 502px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    min-width: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 10px;
+    padding-bottom: 22px;
+  }
+}
+
+.nav__item {
+  width: 42%;
+  letter-spacing: -0.2px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  &:nth-child(2n) {
+    margin-left: 72px;
+    letter-spacing: 0.6px;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 0;
+      letter-spacing: inherit;
+    }
+  }
+
+  &--company {
+    @media (max-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--accessories {
+    @media (max-width: $tablet-width) {
+      order: 5;
+    }
+  }
+
+  &--products {
+    @media (max-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--delivery {
+    @media (max-width: $tablet-width) {
+      order: 6;
+    }
+  }
+
+  &--production {
+    @media (max-width: $tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--contacts {
+    @media (max-width: $tablet-width) {
+      order: 7;
+    }
+  }
+
+  &--mounting {
+    @media (max-width: $tablet-width) {
+      order: 4;
+    }
+  }
+}
+
+.nav__link {
+  color: #1b2d37;
+  opacity: 0.5;
+  font-family: $pt-mono;
+  font-size: 15px;
+  line-height: 25px;
+
+  @media (max-width: $mobile-width) {
+    line-height: 30px;
+  }
+}
+
+.nav__header {
+  padding-top: 7px;
+  letter-spacing: 0.8px;
+
+  @media (max-width: $mobile-width) {
+    padding: 17px 10px 14px 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

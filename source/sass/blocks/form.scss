@@ -1,0 +1,147 @@
+.form__field {
+  & input,
+  textarea {
+    background-color: $light-blue;
+    border: none;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-bottom: 14px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 43px;
+      padding-top: 12px;
+      padding-left: 20px;
+      padding-bottom: 12px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 32px;
+    }
+
+    &::-moz-placeholder {
+      color: white;
+    }
+
+    &::-webkit-input-placeholder {
+      color: white;
+    }
+
+    &:hover {
+      background-color: #19ccff;
+      cursor: pointer;
+
+      transition: 0.9s;
+    }
+
+    &:focus {
+      background-color: #189cd5;
+      cursor: pointer;
+    }
+  }
+
+  &--name {
+    & input {
+      width: 270px;
+
+      @media (max-width: $tablet-width) {
+        width: 281px;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+      }
+    }
+  }
+
+  &--modal {
+    width: 100%;
+
+    & input,
+    textarea {
+      width: 100%;
+      margin-bottom: 32px;
+      padding-top: 13px;
+      padding-left: 25px;
+    }
+  }
+
+  &--phone {
+    & input {
+      width: 270px;
+
+      @media (max-width: $tablet-width) {
+        width: 280px;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+      }
+    }
+  }
+
+  &--question {
+    width: 100%;
+
+    & textarea {
+      height: 154px;
+      margin-bottom: 36px;
+
+      @media (max-width: $tablet-width) {
+        height: 156px;
+        margin-bottom: 43px;
+      }
+
+      @media (max-width: $mobile-width) {
+        height: 102px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &--question-modal {
+    width: 100%;
+
+    & input,
+    textarea {
+      height: 104px;
+      padding-top: 13px;
+      padding-left: 25px;
+      margin-bottom: 27px;
+    }
+  }
+
+  & span {
+    display: none;
+  }
+
+  & span.form__field--alert {
+    display: inline-block;
+  }
+}
+
+.form__button {
+  margin-bottom: 40px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+
+  &[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.form__checkbox {
+  margin-bottom: 40px;
+  max-width: 270px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 277px;
+  }
+}

@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+    transition: 0.9s;
+    color: $blue-color;
+  }
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+  font-family: $pt-mono;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+input {
+  color: white;
+
+  &:required {
+    box-shadow: none;
+  }
+}
+
+textarea {
+  &:required {
+    box-shadow: none;
+  }
+}

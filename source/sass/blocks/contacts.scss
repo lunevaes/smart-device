@@ -1,0 +1,47 @@
+.contacts__list {
+  padding: 15px 0 0;
+  margin: 0;
+
+  @media (max-width: $mobile-width) {
+    padding: 8px 20px 22px 15px;
+  }
+}
+
+.contacts__header {
+  padding-top: 7px;
+
+  @media (max-width: $mobile-width) {
+    padding: 16px 10px 14px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  & h2 {
+    letter-spacing: 0.9px;
+  }
+}
+
+
+.contacts__link {
+  color: $dark-color;
+  opacity: 0.5;
+  font-family: $pt-mono;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+}
+
+.contacts__item {
+  letter-spacing: -0.68px;
+
+  &--text {
+    padding-bottom: 4px;
+    color: $dark-color;
+    opacity: 0.5;
+  }
+
+  @media (max-width: $mobile-width) {
+    line-height: 22px;
+  }
+}
